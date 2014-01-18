@@ -4,8 +4,8 @@
 *.txt
 
 #Validator
-.py
-.csv
+*.py*
+*.csv
 
 
 # Object files
