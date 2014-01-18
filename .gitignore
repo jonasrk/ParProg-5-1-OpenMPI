@@ -1,3 +1,13 @@
+*.DS_Store
+
+#output and validator
+*.txt
+
+#Validator
+.py
+.csv
+
+
 # Object files
 *.o
 *.ko
@@ -16,3 +26,4 @@
 *.exe
 *.out
 *.app
+
