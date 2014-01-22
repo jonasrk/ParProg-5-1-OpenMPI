@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C84CD679-9A52-4869-BBF2-DDDE9AE8D570</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MPI-Heatmap</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>624EF397-A2BF-472D-9593-A1D267131EE3</key>
+		<string>https://github.com/jonasrk/ParProg-5-1-OpenMPI</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MPI-Heatmap/MPI-Heatmap.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>624EF397-A2BF-472D-9593-A1D267131EE3</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jonasrk/ParProg-5-1-OpenMPI</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>624EF397-A2BF-472D-9593-A1D267131EE3</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>624EF397-A2BF-472D-9593-A1D267131EE3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ParProg-5-1-OpenMPI</string>
+		</dict>
+	</array>
+</dict>
+</plist>

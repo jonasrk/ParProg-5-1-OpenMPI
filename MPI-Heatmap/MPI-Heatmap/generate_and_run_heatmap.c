@@ -1,3 +1,5 @@
+#include "heatmap.h"
+
 double* generate_and_run_heatmap(int width, int height, int rounds, int number_of_hotspots, int* hotspots){
     // generate heatmap
     double* heatmap;

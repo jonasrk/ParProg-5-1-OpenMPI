@@ -48,7 +48,10 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
+      <PathRunnable
+         FilePath = "/usr/local/Cellar/open-mpi/1.7.3/bin/orterun">
+      </PathRunnable>
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DD38E2A1188A9DF4003C7545"
@@ -56,8 +59,16 @@
             BlueprintName = "MPI-Heatmap"
             ReferencedContainer = "container:MPI-Heatmap.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <CommandLineArguments>
+         <CommandLineArgument
+            argument = "-n 2"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "$BUILT_PRODUCTS_DIR/$EXECUTABLE_PATH"
+            isEnabled = "YES">
+         </CommandLineArgument>
          <CommandLineArgument
             argument = "20"
             isEnabled = "YES">
