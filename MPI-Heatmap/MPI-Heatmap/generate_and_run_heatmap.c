@@ -25,7 +25,5 @@ double** generate_and_run_heatmap(int width, int height, int rounds, int number_
                 heatmap[(hotspots[hotspot*4]*height)+hotspots[hotspot*4+1]] = 1;}}
         last_round = heatmap;}
     
-    if(last_round != NULL) free(last_round);
-    
     double **return_pointer = &heatmap;
     return return_pointer;}

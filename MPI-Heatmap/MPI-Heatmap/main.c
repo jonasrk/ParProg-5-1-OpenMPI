@@ -27,9 +27,10 @@ int main(int argc, const char * argv[]){
         double** heatmap = generate_and_run_heatmap(width, height, rounds, number_of_hotspots, hotspots);
         generate_output(argc, number_of_coords, coords, width, height, *heatmap);
         
-        if(coords != NULL) free(coords);
-        if(hotspots != NULL) free(hotspots);
-        if(*heatmap != NULL) free(*heatmap);
+//        if(coords != NULL) free(coords);
+//        if(hotspots != NULL) free(hotspots);
+//        if(*heatmap != NULL) free(*heatmap); // leads to double free or corruption ob submission system
+        //TODO does last_round from generate_and_run_heatmap have to be freed to?
         
     }
     
