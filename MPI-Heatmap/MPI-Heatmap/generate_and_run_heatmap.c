@@ -1,6 +1,6 @@
 #include "heatmap.h"
 
-double* generate_and_run_heatmap(int width, int height, int rounds, int number_of_hotspots, int* hotspots){
+double** generate_and_run_heatmap(int width, int height, int rounds, int number_of_hotspots, int* hotspots){
     // generate heatmap
     double* heatmap;
     double* last_round = malloc(sizeof(double)*width*height);
@@ -25,4 +25,7 @@ double* generate_and_run_heatmap(int width, int height, int rounds, int number_o
                 heatmap[(hotspots[hotspot*4]*height)+hotspots[hotspot*4+1]] = 1;}}
         last_round = heatmap;}
     
-    return heatmap;}
+    if(last_round != NULL) free(last_round);
+    
+    double **return_pointer = &heatmap;
+    return return_pointer;}
