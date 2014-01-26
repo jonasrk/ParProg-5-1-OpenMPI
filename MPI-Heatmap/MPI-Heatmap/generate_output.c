@@ -13,8 +13,9 @@ int generate_output(int argc, int number_of_coords, int* coords, int width, int 
     
     if (argc == 6){
         for (int coord = 0; coord < number_of_coords; coord++){
-            buffer = (char) heatmap[coords[coord*2]*height+coords[coord*2+1]];
-            MPI_File_write(fph, &buffer, 1, MPI_CHAR, &status);
+            char buf[9];
+            snprintf(buf, sizeof(buf), "%f", heatmap[coords[coord*2]*height+coords[coord*2+1]]);
+            MPI_File_write(fph, &buf, 8, MPI_CHAR, &status);
             buffer = (char) '\n';
             MPI_File_write(fph, &buffer, 1, MPI_CHAR, &status);}}
     else {
