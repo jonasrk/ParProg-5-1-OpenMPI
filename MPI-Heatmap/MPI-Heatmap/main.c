@@ -13,7 +13,7 @@ int main(int argc, const char * argv[]){
     int world_rank;
     MPI_Comm_rank(MPI_COMM_WORLD, &world_rank);
     
-    if (world_rank == MPI_IO) {
+    if (world_rank == 0) {
         
         int width = atoi(argv[1]);
         int height = atoi(argv[2]);
@@ -24,8 +24,8 @@ int main(int argc, const char * argv[]){
         
         if (argc == 6) number_of_coords = parse_coordinates(argv[5], &coords);
         int number_of_hotspots = parse_and_count_hotspots(argv[4], &hotspots);
-        double* heatmap = generate_and_run_heatmap(width, height, rounds, number_of_hotspots, hotspots);
-        generate_output(argc, number_of_coords, coords, width, height, heatmap);
+        double** heatmap = generate_and_run_heatmap(width, height, rounds, number_of_hotspots, hotspots);
+        generate_output(argc, number_of_coords, coords, width, height, *heatmap);
         
 //        if(coords != NULL) free(coords);
 //        if(hotspots != NULL) free(hotspots);
