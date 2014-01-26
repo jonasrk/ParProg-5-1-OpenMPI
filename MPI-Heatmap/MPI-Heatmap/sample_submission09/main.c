@@ -13,7 +13,7 @@ int main(int argc, const char * argv[]){
     int world_rank;
     MPI_Comm_rank(MPI_COMM_WORLD, &world_rank);
     
-    if (world_rank == MPI_IO) {
+    if (world_rank == 0) {
         
         int width = atoi(argv[1]);
         int height = atoi(argv[2]);
